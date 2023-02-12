@@ -6,6 +6,10 @@ body {
     font-family: 'Exo 2', sans-serif;
 }
 
+p {
+
+}
+
 .hero-img,
 .case-description,
 .case-objects {
@@ -32,6 +36,12 @@ body {
 
 .case-description .case-objects {
     max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .case-description p {
+        margin-right: 30px;
+    }
 }
 
 .side {
