@@ -2,6 +2,10 @@ html {
     scroll-behavior: auto !important;
 }
 
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
 .hero-img,
 .case-description,
 .case-objects {
