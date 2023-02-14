@@ -75,6 +75,17 @@ p {
     margin-bottom: 8px;
 }
 
+@media (max-width: 768px) {
+    .case-objects p {
+        font-size: 0.8rem;
+        color: #ffffff;
+        height: 160px;
+        padding-top: 130px;
+        padding-left: 10px;
+        margin-bottom: 8px;
+    }
+}
+
 .row>* {
     padding-left: 0px !important;
     padding-right: 0px !important;
