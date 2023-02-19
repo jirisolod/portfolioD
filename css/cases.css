@@ -2,9 +2,123 @@ html {
     scroll-behavior: auto !important;
 }
 
+:root {
+    --color1: blue;
+    --color2: rgb(202, 202, 202);
+  }
+
 body {
     font-family: 'Exo 2', sans-serif;
 }
+
+/* blue dot start*/
+
+.blue-dot {
+    background-color: var(--color1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*blue dot end */
+
+/*sidebar section */
+
+header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px !important;
+    height: 60px !important;
+    cursor: pointer;
+    margin-right: 10px;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 4px 0px;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-6px, 8px)
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-0px, 0px)
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.sidebar-nav {
+    position: fixed;
+    top: 0px;
+    left: 100%;
+    width: 60%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98px;
+    background-color: white;
+    padding-top: 60px;
+    margin-top: 60px;
+}
+
+.sidebar-nav a {
+    display: block;
+    text-align: center;
+    
+    margin-bottom: 16px;
+    padding: 12px 16px;
+
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.sidebar-nav.is-active {
+    left: 40%;
+    transition: 0.4s;
+}
+
+@media (min-width: 550px) {
+
+    .sidebar-nav.is-active {
+        width: 20%;
+        left: 80%;
+    }
+}
+
+
+.sidebar-nav a:hover {
+    color: blue;
+    font-weight: bold;
+} 
+
+/* end sidebar */ 
+
 
 .hero-img,
 .case-description,
@@ -13,6 +127,7 @@ body {
 }
 
 .img-banner {
+    margin-top: 60px;
     object-fit: cover;
     width: 100%;
     height: 600px;

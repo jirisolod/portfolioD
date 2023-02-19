@@ -39,9 +39,9 @@ a:hover {
 
 h2 {
     font-size: 2.25rem;
+    height: 150px;
     display: flex;
     align-items: end;
-    height: 150px;
     margin-bottom: 42px;
 }
 
